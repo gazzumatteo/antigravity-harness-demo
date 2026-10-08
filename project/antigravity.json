@@ -1,0 +1,34 @@
+{
+  "project_name": "ACME Inc",
+  "version": "2.0",
+  "branding_rules": "./DESIGN.md",
+  "workspaces": [
+    {
+      "name": "frontend",
+      "path": "./frontend",
+      "type": "web"
+    },
+    {
+      "name": "backend",
+      "path": "./backend",
+      "type": "api"
+    }
+  ],
+  "agent_config": {
+    "model": "gemini-3.8-flash",
+    "permissions": {
+      "file_system": {
+        "read": ["./frontend", "./backend"],
+        "write": ["./frontend", "./backend"]
+      },
+      "commands": {
+        "allowed": ["npm run", "npm install", "git"]
+      }
+    },
+    "features": {
+      "dynamic_subagents": true,
+      "artifacts": true,
+      "tui_review": true
+    }
+  }
+}

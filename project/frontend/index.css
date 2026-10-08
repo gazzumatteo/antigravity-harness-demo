@@ -1,0 +1,114 @@
+/* Initial generic style that does not comply with the ACME Inc brand */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* pure white */
+    color: #000000; /* pure black */
+}
+
+.ugly-header {
+    background-color: #007bff; /* pure blue */
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* drop shadow */
+}
+
+.ugly-header .logo {
+    font-size: 24px;
+    font-weight: 700; /* bold */
+}
+
+.ugly-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.ugly-nav a.active {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* drop shadow */
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #333333;
+    font-weight: 700; /* bold */
+    margin-bottom: 20px;
+}
+
+.hero .subtitle {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #007bff; /* pure blue */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 700; /* bold */
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2); /* colored shadow */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* drop shadow */
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #007bff; /* pure blue */
+    font-weight: 700; /* bold */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555555;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #343a40;
+    color: white;
+    margin-top: 60px;
+}
