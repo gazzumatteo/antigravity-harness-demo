@@ -61,6 +61,8 @@ cd ..
 
 **3. Keep the agent inside the folder.** In `~/.gemini/antigravity-cli/settings.json` set `"allowNonWorkspaceAccess": false` for the duration of the run (and restore it afterwards). The real limits live in the tool configuration, not in the prompt.
 
+> `project/antigravity.json` is context, not enforcement: `agy` reads it like any other file and does not apply its `permissions` block (its `"git"` entry, for example, would cover `git commit` and `git push`). What is actually allowed without asking is decided by `permissions.allow` in `agy`'s `settings.json`; everything else prompts for approval.
+
 **4. Run the agent in plan mode:**
 
 ```bash
